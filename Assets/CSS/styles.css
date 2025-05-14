@@ -1,0 +1,14 @@
+/* Wildcard selector to override default styles added by the browswe */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header */
+header {background-color: lightcoral;}
+
+/* Main */
+main {background-color: lightblue;}
+
+/* Footer */
+footer {background-color: green;}
