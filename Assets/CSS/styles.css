@@ -39,9 +39,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #252525;
-  /* font-size: 2.5rem; */
-  /* text-align: center; */
-  /* padding: 1rem; */
+  
 }   
 
 /* Main */
@@ -57,14 +55,14 @@ main {
   list-style-type: none;
 }
 
-#menu li {
-  /* display: inline-block; */
-  margin-bottom: 0 1rem;
+#menu > li {
+   margin-bottom: 1em;
 }
 
 .active {
   border-bottom: 1px solid #3a3a3a;
 }
+
 /* Footer */
 footer {
   background-color: orange;
