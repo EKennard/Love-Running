@@ -31,7 +31,7 @@ h3 {
   display: none;
 }
 
-/* Header */
+/* Header ===================================================================================================================*/
 header {
   background-color: #ffffff;
   padding: 0 1rem;
@@ -89,7 +89,7 @@ nav {
   font-size: 2rem;
 }
 
-/* Main content*/
+/* Main content ===============================================================================================================================*/
 main {
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
@@ -189,7 +189,7 @@ main {
   color: #fafafa;
 }
 
-/* Gallery page */
+/* Gallery page ========================================================================================================================== */
 #photos img {
   width: 100%;
   line-height: 1em;
@@ -199,7 +199,57 @@ main {
   line-height: 0;
 }
 
-/* Footer */
+/* Sign-Up page ========================================================================================================================== */
+
+main {
+  flex-direction: column;
+  background: url("../images/signup-image.webp") no-repeat center center/cover;
+  background-position: 75%;
+}
+
+#signup {
+  background-size: cover;
+  /* background-position: 75%; */
+  flex-grow: 1;
+  padding: 20px 10%;
+}
+
+#signup h2 {
+  color: #fafafa;
+  padding-bottom: 20px;
+}
+#signup-form {
+  color: #ffffff;
+  background-color: rgba(60,60,60, 0.6);
+  padding: 30px;
+}
+
+.text-input {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.join-button {
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  margin-top: 20px;
+  padding: 15px 32px;
+  }
+
+/* Footer ================================================================================================================================ */
 #social-networks {
   text-align: center;
   padding: 20px 0;
