@@ -202,19 +202,25 @@ main {
 /* Sign-Up page ========================================================================================================================== */
 
 main {
-  flex-direction: column;
-  background: url("../images/signup-image.webp") no-repeat center center/cover;
-  background-position: 75%;
+  /* enlarge main element to push footer down */
+  flex: 1 0 auto;
+  /* add margin at the top to prevent content from being covered by the header */
+  margin-top: 47px;
+  /* enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
 
+/* form */
 #signup {
+  background-image: url("../images/signup-image.webp");
   background-size: cover;
-  /* background-position: 75%; */
+  background-position: 75%;
   flex-grow: 1;
-  padding: 20px 10%;
+  padding: 20px 10% 0 10%;
 }
 
-#signup h2 {
+#signup-form h2 {
   color: #fafafa;
   padding-bottom: 20px;
 }
@@ -225,13 +231,14 @@ main {
 }
 
 .text-input {
-  background-color: rgba(0, 0, 0, 0);
+  background: transparent;
   color: #fafafa;
   border: 1px solid #fafafa;
   border-radius: 2px;
   width: 100%;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin: 5px 0 20px 0;
+  height: 25px;
+  padding: 0 5px;
 }
 
 .radio-buttons {
@@ -334,6 +341,27 @@ main {
   #photos {
     column-count: 3;
   }
+
+/* Sign up form*/
+#signup {
+  background-position:center;
+  position:relative;
+}
+#signup-form {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  max-width: 400px;
+  }
+
+  .text-input:hover {
+    border-color: #f16c6b;
+  }
+
+.join-button:hover {
+  background-color: #fafafa;
+  color: #454b1b;
+}
 }
 
 /*Media query: small laptops and larger (992px and up)*/
