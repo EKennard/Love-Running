@@ -245,7 +245,7 @@ main {
     flex-direction: row;
   }
   
-  #benefits > div: {
+  #benefits > div {
     flex: 1;
   }
 
